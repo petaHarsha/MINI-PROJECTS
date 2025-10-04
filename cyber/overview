@@ -1,0 +1,342 @@
+
+Cyber Security
+
+Cyber Security is a set of techniques used to protect systems, networks, and applications from attacks, damage or unauthorized access emerging from internet.
+
+
+These attacks are usually aimed at accessing, changing, or destroying sensitive information; extorting money from users; or interrupting normal business processes.
+
+Implementation of effective Cyber Security measures is a challenge in today's world as there are comparatively a lot more devices than people.
+
+
+Each of the Cyber attack violate a specific desired property of security.
+These properties are termed as Security Objectives.
+Security objectives are also known as security goals, characteristics of information and information systems.
+
+The three standard pillars (Security Objectives) of Cyber Security are:
+
+Confidentiality
+
+Makes sure that data remains private and confidential. It should not be viewed by unauthorized people through any means
+
+Integrity
+
+Assures that data is protected from accidental or any deliberate modification
+
+Availability
+
+Ensures timely and reliable access to information and its use.
+
+These three principles are together called as the CIA (Confidentiality, Integrity and Availability) triad.
+An alternate way of referring CIA is through DAD (Disclosure, Alteration and Denial) triad. 
+
+There are three other important concepts in information security to support these pillars.
+They are known  as AAA (Authentication, Authorization and Accounting) services. These services are used to support the CIA principles.
+
+Authentication is verifying an identity.
+ 
+Authorization is determining whether a particular user can access a particular resource or function.
+ 
+Accounting (Non-repudiation) includes two other components - auditing & non-repudiation.
+Auditing is recording a log of activities of a user in a system
+Accounting refers to reviewing the log file to check for violations and hold users answerable to their actions. 
+It includes non-repudiation
+So far you have become familiar with the objectives and services of Cyber Security, let us now proceed to the commonly referred terms in cyber security. 
+
+Note: Refer to Appendix 1 for a case study on Security Objectives and Services.
+
+
+Apart from the CIA objectives and the AAA services, there are some more terminologies that are frequently used in the Cyber Security space.
+
+Asset
+Vulnerability
+Exploit
+Threat
+Threat Agent
+Risk
+Attack Vectors
+Control
+Let us understand each of these through examples.
+
+Asset
+Anything that has value to an organization or person including computing device, information technology (IT) system, IT network, IT circuit, software, virtual computing platform (common in cloud and virtualized computing), and related hardware (e.g., locks, cabinets, keyboards) are termed as assets.
+
+Information Asset
+
+Information or data that has economic value to the organization is termed as information asset. It has the following features:
+
+It is a part of the organization's identity
+It may be highly confidential
+It may also include:
+Information about people and procedures
+Software or hardware details
+Networking elements
+Examples of information assets include confidential emails, identity information, system data, bank transactions, newly developed design schema of a project, etc.
+
+Vulnerability
+A flaw or weakness in system security procedures, design, implementation, or internal controls that might result in a security breach is termed as Vulnerability.
+
+E.g. Software bugs, Inefficient controls, Hardware flaws, Human errors
+
+Exploit
+An exploit is a piece of software or a sequence of commands that takes advantage of a vulnerability to cause unintended or unanticipated behavior to occur on a computer software or hardware.
+
+E.g. A spyware that exploits vulnerabilities in the computer operating system to gain access to a web camera for collecting video footage.
+
+Threat
+Threat is any potential danger that is associated with the exploitation of a vulnerability. A threat is an undesirable event that can happen to assets.
+
+E.g. An organization running on windows operating system was targeted and blocked until a ransom of $300 was credited to hackers account to unlock the data. Threat here is the leak of data.
+
+Threat agent
+Threat agent is a term used to represent an individual or group that can cause a threat.
+
+It is important to identify who would want to exploit the assets of a company (capabilities), and how they might utilize those (intentions) against the company.
+
+Threat agent = Capabilities + Intentions + Past activities
+
+E.g. The threat agent in the above example is a hacker.
+
+Risk
+Risk is a function of likelihood of a given threat agent exploiting a particular vulnerability and the resulting impact of the adverse event on the organization.
+
+Risk = Likelihood * Impact
+
+Likelihood is the probability of occurrence of the threat.
+
+Impact is the magnitude of harm that could be caused by the threat. Impact can be a business impact or a technical impact.
+
+Attack vector aka paths
+Attackers can potentially find many different paths to cause a harm to business through their application.
+Each of these paths represents a risk that may or may not be serious enough to warrant attention.
+
+Paths could be easy or hard to exploit. Sometimes, these paths are trivial to find and exploit and sometimes they are extremely difficult.
+Similarly, the harm that is caused may lead to any or no consequence.
+
+Controls
+Control is a mitigation to protect the asset from risks.
+
+E.g. The organizations would not have faced WannaCry ransomware attack if the latest Microsoft patches were updated to systems running Windows O.S released the previous week.
+
+
+By now you know that, Cyber Security is not just about installing the latest anti-virus or having a strong firewall, it is ensuring that all the aspects of your organization are well secured.
+
+Any IT organization comprises of the following security layers:
+
+Information Security- is about protecting the information that is valuable to the organization.  
+It is about protection of information in all its form – electronic, printed, hand-written, verbal etc. 
+This applies to all aspects of safeguarding or protecting data, in whatever form within the organization.
+
+E.g.  protection of intellectual property, trade secrets, email communications, blood group of employees, etc., from being leaked or tampered.
+
+Network Security- is about ensuring the availability of networks and confidentiality and integrity of data flowing within the network.
+The organization’s network is a trusted zone. Traffic entering the Intranet (trusted zone) from the Internet (untrusted zone) must be carefully scrutinized.
+There should be mechanisms to prevent malicious traffic from entering the network.
+
+E.g. use of firewall to control all inbound and outbound traffic in the network.
+
+Host (Operating System) Security- is about taking specified measures to protect the host (Operating System) from threats, viruses, worms, malware or remote hacker intrusions. 
+OS security looks up to all the preventive control techniques, which safeguards the computer assets capable of being stolen, edited, or deleted.
+
+E.g. installation of antivirus.
+
+Application Security - is ensuring that the web applications are developed following the secure design and coding guidelines.
+It involves preventing the security bugs and flaws in any application.
+
+E.g. building applications which can block injection attacks, etc.
+
+Human (People) Security - is about creating and leveraging awareness among employees to become cautious about sharing sensitive information, downloading an attachment from unauthorized sources and handling organization's resource as per policies.
+
+E.g. protecting organization from phishing emails sent to employees by creating awareness, etc.
+
+Information security basically covers every aspect of an organization's security including physical aspects. 
+On the other hand, Cyber Security is ensuring security of digital assets from threats emerging from internet.
+Host, network and application security comes under the purview of Cyber Security.
+
+One can envision Cyber Security as a subset of Information Security.
+
+There are risks involved and controls suggested for each layer.
+
+Layers                                       | Who/What makes this layer                                                                 | Risks                                                   | Controls
+-------                                      | --------                                                                                  | --------                                                | --------
+People                                       | Users (Employees, customers, contractors), developers, administrators helpdesk,           | Social engineering, spear phishing, unnecessary access  | Awareness, Education, Training, **Identity Governance**
+Application Software                         | Web applications (internal & public), software components (frameworks, libraries), DBs     | OWASP Top 10, SANS Top 25 Dangerous Software Errors     | Threat modeling, **Secure coding** **Secure testing (VA)**
+Network Host (Operating System) Information  | Desktops, Laptops, System software (Operating System), Mobiles. Domain network, network    | Theft, Malware (Virus, Ransomware, Worm, Trojan Horse), | **Infrastructure Security :** Anti-Virus, Intrusion Detection System, Firewall, SIEM, Endpoint 
+                                                                                                                                                                                                      Security, Data Leak Protection (DLP), Encryption, Digital Signature, Digital Certificates
+                                              devices (routers, switches, wireless access points)                                            Intrusion, Data Leak, Denial of Service, Sabotage,
+                                                                                                                                             Man in the Middle Attack, spoofing
+                                              , Data in transit (email, HTTP requests), 
+                                              Data stored (files, emails)
+
+
+
+Network security refers to any activity taken to protect the availability of networks and confidentiality and integrity of data in the network.
+
+The internet is an untrusted place. Anything coming from it could be potentially harmful.
+ 
+The organization’s network is a trusted zone.
+ 
+Data entering the intranet (trusted zone) from the Internet (untrusted zone) must be scrutinized.
+ 
+There should be mechanisms to prevent certain data from entering the network.
+How is Network Security Achieved?
+It is achieved by using important security devices that perform the scrutinization.
+
+Firewalls
+ 
+Intrusion detection/prevention systems (IDS/IPS)
+ 
+Virtual Private Network (VPN) gateways
+
+
+
+
+What is a firewall?
+A firewall is a special computer that is placed between an organization’s intranet and the Internet.
+ 
+
+
+ 
+All communication between the internet and the intranet flow through this firewall.
+ 
+A firewall has an access control list like the one shown below. Each entry in it is called a rule.
+
+ 
+The firewall inspects every packet's headers – source and destination IP addresses, ports etc.
+ 
+It compares the header information with each rule in the access control list, in an if-elseif-else way.
+ 
+If a packet matches a particular rule then, action specified under that rule is applied.
+ 
+The action could be to allow or deny entry/exit for a packet.
+Apart from controlling access to internal sites, a firewall is used to block several types of attacks like DDoS or to enforce an organization’s network policy 
+(E.g. Employees not allowed to access Internet websites).
+
+What is intrusion?
+Intrusions refers to trespassing into a computer network. Below are example of intrusions.
+
+An unauthorized user logs on to a machine.
+ 
+An authorized user disables logging functionality in a router.
+ 
+A worm (a type of malware) spreads to all the hosts in the network.
+ 
+An authorized user (say an employee) downloads all employee directory records to his computer.
+ 
+An unusually high number of login attempts in a host.
+While a firewall is very useful in preventing (or blocking) unwanted traffic, it cannot be useful in detecting or stopping the above intrusion incidents.
+An Intrusion Detection/Prevention System (IDPS) is more helpful in mitigating such incidents. Such systems can both detect and prevent intrusion attempts.
+However, they may be configured only to detect intrusions instead of blocking intrusions. In such configurations, the system will be known as IDS (Intrusion Detection Systems).
+
+What is an Intrusion Detection System (IDS)?
+An IDS,
+
+is a dedicated computer or a software running on a general purpose computer.
+ 
+is positioned at certain points in the network. The IDS sniffs all the packets at that point.
+ 
+analyses the contents of network packets (headers and application data) and the sequence of packets.
+ 
+sends alert messages to the administrator if analysis result indicates an intrusion.
+ 
+can also use different log files (generated by hosts) as input for detecting the intrusions.
+
+VPN
+A VPN is an extension of a private network across a public network. It enables the users to send and receive data across shared or public networks as if their computing devices were directly connected to the private network. 
+
+Benefits of using VPN:
+
+Access a business network while traveling
+
+Protect yourself from snooping on untrustworthy Wi-Fi hotspots
+
+Get connected to organization's network securely
+Now that you know how network security is important to an organization, let us understand the need for Operating System (OS) security.
+
+
+
+An Operating System (OS) plays a crucial role in the operation of computer systems. Lack of security of the OS can result in a fatal impact on the computer system and the applications running on them. Any small vulnerability within an OS can turn out to be fatal as it can compromise the entire organization resources. Hence, by securing the OS, the work environment can be stabilized, access to resources and the external environment can be controlled.
+
+
+Case Study
+One of the leading hotels had expanded its business in many parts of the globe. The hotel had many luxury facilities like workstations, Wi-Fi routers, sensors and automatic lock for doors. All these facilities at the hotel were centrally managed through a server. One day, suddenly many guests of the hotel could not access their rooms due to failure in the hotel’s key system. When the system administrators were given the task to resolve this issue they reported the below observations:
+
+They were unable to access their own key system with the password and username they had created.
+
+They got error message during logging to the key system as “Your system has been hacked and all your files are locked. Please pay Bitcoins to regain access to your key system.”
+
+The hotel was under a cyber-attack resulting in failure of their hotel’s key system.
+
+Cause of the attack
+Once admins got back access of their key system, they conducted forensic research to know the cause of the attack. They come up with the below observations:
+
+Some guests had opened an email attachment through workstations present in the hotel's room. This email consisted of malware which infected all the computers present in the network and thus also infected the central server.
+ 
+The malware infected the computers due to un-patched vulnerabilities in the OS.
+ 
+This virus prevented the users from accessing their system and encrypted all the information stored on the server.
+Thus, the hotel not only faced financial loss but it also caused damage to its reputation. Hence, it becomes important to secure the OS layer as well.
+
+
+logo
+more
+OS security is the process of upholding security objectives such as Integrity, Confidentiality and Availability of the system. OS security measures are taken to protect the Operating System from threats such as virus, malware, and remote hacker intrusions.
+
+Threats emerging from access to OS are of two types such as:
+
+Intruder
+Malicious software (malware)
+Intruder
+Individuals who exploit and penetrate a system's access controls.
+A legitimate user who is not authorized to access certain data or programs.
+An individual who controls the supervisory access of system and begins to play with files or data present in the system.
+Malicious Software (malware)
+These are software programs which exploit vulnerabilities in a computer system.
+
+They can be divided into two types:
+
+(1) Parasitic
+
+Fragments of programs that cannot exist independently of some actual application program, utility, or system program
+
+E.g. Viruses, logic bombs, and back doors
+
+(2) Independent
+
+Self-contained programs that can be scheduled and run by the Operating system
+
+E.g. Worms and bot programs
+
+Hence, its important to protect the Operating System from these threats.
+
+How is Operating System Security Achieved?
+Few of the most important Operating System (OS) security measures are:
+
+Regular Updates
+Regular updates to the Operating System with latest patches to fix any known vulnerability.
+Install updated antivirus engines and software to combat the latest threats.
+ 
+Ensure Proper Access Control
+Ensure that users have only the necessary level of privileges to carry out their job. 
+Periodically review user access to discover and revoke excessive access.
+ 
+Operating System Vulnerability Assessment
+Detect vulnerabilities in Operating System using tools like Metasploit and mitigate the vulnerabilities.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
