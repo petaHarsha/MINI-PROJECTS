@@ -323,7 +323,72 @@ Periodically review user access to discover and revoke excessive access.
 Operating System Vulnerability Assessment
 Detect vulnerabilities in Operating System using tools like Metasploit and mitigate the vulnerabilities.
  
+Secure coding is a practice to avoid introducing security bugs in the software.
 
+Security professionals have analyzed previous attacks targeting applications and have discovered that most of the vulnerabilities have arisen from common coding errors.
+A list of these common errors has been listed by OWASP (Open Web Application Security Project) and SANS (SysAdmin, Audit, Network and Security).
+
+OWASP Top 10 Application Security Risks
+ 
+CWE/SANS Top 25 Dangerous Software Errors
+As a developer/tester/code reviewer the objective should be to ensure that the applications don't have these common security bugs.
+
+These guides provide secure alternatives for each of the errors (for developers) and tips on how to detect these errors (for testers, code reviewers).
+
+For example, the use of Prepared Statements for constructing dynamic SQL queries will prevent SQL injection attacks.
+
+Unsafe Coding
+
+String query = " Select  *  from userAccounts where userid = ' " + uid + " ' and passwd = ' " + passwd + " ' ; " ;
+Secure coding
+
+String pquery = " Select * from userAccounts where userid = ? and passwd = ?"
+        preparedStatement pstmt = con.preparedStatement(pquery);
+        pstmt.setString(1,uid);
+        pstmt.setString(2, passwd);
+        
+ Security design flaws can be avoided by following established secure design principles:
+
+OWASP Security by design principles
+
+IEEE Avoiding the Top 10 Software Security Design Flaws
+
+CWE/SANS Top 25 Dangerous Software Errors
+
+ 
+
+Two important secure design principles are:
+
+(1) Principle of least privilege
+Users should have no more privileges than required for carrying out their normal functions.
+
+Example 1: Most users do not need administrative privileges to do their job. Hence, administrative privileges should not be granted to users.
+Users must be provided with an option to request an exception access with proper justification, in case they need administrative privileges.
+
+Example 2: Mitigating SQL injection vulnerability:
+
+Applications, have user accounts in the database so that they can access the database.
+ 
+If the web application's functionality is just to retrieve records from the database, then it is sufficient to have a read privilege.
+ 
+In fact permissions should be tuned so that the application user account will not be able to read tables of other applications.
+ 
+It can be said as 'mitigating' because it does not eliminate the vulnerability but instead significantly reduces the severity of the vulnerability.
+For example, the number of records exposed due to an SQL injection vulnerability will be reduced if the least privilege principle is followed.
+(2) Principle of defense in depth
+Use of multiple security controls to mitigate a vulnerability. So that if one control fails, the other controls can prevent an attack. 
+
+For example, SQL injection vulnerability can be mitigated by having the following controls:
+
+Using prepared statements.
+ 
+Validating all the inputs to ensure that unsafe inputs (eg. ' --) are not accepted.
+ 
+Setting proper DB permissions (adherence to the principle of least privilege).
+Defense in depth is having multiple obstacles before an attacker to make it very difficult for the attacker.
+
+Like SQL injection attack, there are a lot of other severe attacks like cross site scripting attacks, buffer overflow exploits, cross site request forgery attacks, session hijacking etc.
+Refer to the previously mentioned links (OWASP Top 10, CWE/SANS Top 25) for more details.
 
 
 
