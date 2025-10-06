@@ -394,7 +394,21 @@ Refer to the previously mentioned links (OWASP Top 10, CWE/SANS Top 25) for more
 
 
 
+The role of application security testing is to determine, fix and prevent any vulnerabilities found in the application during its development lifecycle.
 
+Following are few Application Security Testing methodologies.
+
+Static Application Testing (SAST)
+This application testing is done during the implementation phase of Software Development Life Cycle itself. Thus, saving the money and time of developers by finding vulnerabilities during implementation phase itself.
+
+Dynamic Application Security Testing (DAST)
+This application testing is done on live/running application to find the vulnerabilities and provide remediation to developers.
+
+Apart from SAST and DAST, there are few more emerging testing methodologies like RASP (Runtime Application Self Protection) and IAST (Interactive Application Security Testing).
+
+ 
+
+Following the Secure Software Development Life Cycle (Secure SDLC) model provides better application security, so let us understand it in detail.
 
 
 
