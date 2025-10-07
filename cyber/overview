@@ -411,6 +411,24 @@ Apart from SAST and DAST, there are few more emerging testing methodologies like
 Following the Secure Software Development Life Cycle (Secure SDLC) model provides better application security, so let us understand it in detail.
 
 
+It is important that the organizations don't consider security just as an aspect of coding or testing phase, rather they must involve considerations about secure applications in every phase of Software Development Life Cycle (SDLC) starting from requirements gathering to design, coding, testing, deployment and even maintenance.
+
+SDLC is geared towards meeting requirements in terms of functions and features, usually to fulfill some specified business objective. However, the set of activities during the different phases of the SDLC might not always intrinsically measure up to security standards. This can be addressed by incorporating a security layer within the SDLC, embedding security right from the beginning of the development cycle. To ensure secure SDLC, security paradigm must be maintained during every phase.
+
+requirements gathering and analysis , design , coding , quality assurence and deployment
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
